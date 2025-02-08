@@ -59,7 +59,7 @@ export default function NavBar(props: any) {
                 textDecoration: 'none',
               }}
             >
-              Shandler Mason
+              S.A. Mason
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton

@@ -14,7 +14,7 @@ export default function Profile() {
             <Col xs={12} md={6} lg={4} className="text-center mb-4">
               <img 
                 src='portrait.png' 
-                alt="Description" 
+                alt="Profile Picture of Shandler A. Mason" 
                 style={{ 
                   borderRadius: '50%', 
                   maxWidth: '100%', 
@@ -25,24 +25,17 @@ export default function Profile() {
               />
             </Col>
             <Col xs={12} md={6} lg={8}>
-              <Typography variant="h6" gutterBottom align='left' className='mb-3'>
-                I'm a Computer Science PhD Student at North Carolina State University Where I was advised by Dr. Sandeep Kaur Kuttal in the 
-                Human-Centric Software Engineering Lab. My research identifies barriers that diverse developers face during collaboration in 
-                pair programming and as teams. I try to come up with solutions such as HCI methodologies or a tool/agent to help developers 
-                collaborate together. Also, I identify barriers and strategies associated with recruiting diverse developers for human-centric 
-                SE research. My dissertation work focuses on making software more inclusive by creating a HCI methodology to evaluate software 
-                to mesure its inclusivity for the 3C's in software development: coordination, collaboration, communication. I've had 6 summer 
-                internships at X, X across various software engineering roles. 
+              <Typography variant='h4' align='center' className='mb-3'><strong>Shandler A. Mason, M.S.</strong></Typography>
+              <Typography variant='h5' gutterBottom align='left' className='mb-3 display-4'>
+              I'm a Computer Science Ph.D. student <i>discovering</i> <strong>societal</strong> and <strong>technological barriers</strong> and <i>inventing</i> <strong>methodologies</strong> to support software practitioners.
               </Typography>
-              <Typography variant="h6" gutterBottom align='left'>
-                My PhD is funded by the National GEM Consortium Fellowship Fellowship and NC State Provost's Doctoral Fellowship. I hold a MS in Computer 
-                Science from North Carolina State University. I hold a BS in Computer Science from North Carolina Agricultural & Technical State 
-                University where I also minored in Applied Mathematics.
-              </Typography>
+
+              <a href='https://2025.hci.international/W8.html'>Join my upcoming workshop at HCII 2025 in Gothenburg, Sweden!</a> <br/> <br/>
+
               <ButtonGroup variant='outlined' aria-label='Basic button group' disableElevation>
-                <Button>CV</Button>
-                <Button>Thesis Proposal</Button>
-                <Button>Disseration</Button>
+                <Button href="\shandler-mason-portfolio/sa_mason_cv.pdf" target='_blank'>CV</Button>
+                <Button href="\shandler-mason-portfolio/sa_mason_resume.pdf" target='_blank'>Resume</Button>
+                {/* <Button>Thesis Proposal</Button> */}
               </ButtonGroup>
             </Col>
           </Row>

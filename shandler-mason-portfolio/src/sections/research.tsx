@@ -9,22 +9,24 @@ export default function Research() {
     <>
       <Box id="Research" sx={{ paddingTop: '32px' }}>
       <Container fluid>
-        <Typography variant="h4" gutterBottom align='left'>Research</Typography>
+        <Typography variant="h4" fontWeight="bold" gutterBottom align='left'>Research</Typography>
         <ResearchSection
-          title="Remote Pair Programming Among Diverse Developers"
-          body="The goal of this research was to understand how race impacts interactions and collaboration among SE developers due to a history of 
-            racial inequalities in the US in which there is a historical under-representation of Black developers in the tech industry, with White 
-            developers comprising the majority. We analyzed how developers coordinated, communicated, and collaborated and creativity styles and 
-            attitude and interactions, leadership style, interruption, communication prompts, and non-verbal cues. Our study emphasizes race's 
-            impact on remote pair programming dynamic and underscores the need for diverse tools and methods to address racial disparities for 
-            collaboration. This research was supported by the Air Force Office of Scientific Research and National Science Foundation."
+          title="Understanding Remote Pair Programming Dynamics Among Developers"
+          body="This research investigated how race impacts pair programming dynamics among 24 professional developers in 12 same- and mixed-race 
+          (Black-White) remote pairs in the United States, analyzing productivity, self-efficacy, creativity, leadership styles, interruptions, 
+          non-verbal communication, and attitudes. We highlighted the impact of race on collaboration dynamics and underscored the need for diverse 
+          tools and methods to address racial disparities in the Software Engineering field."
+          photo='research_photos/RemotePairProgramming.png'
+          alttext='Understanding Remote Pair Programming Dynamics Among Developers Image'
         />
         <ResearchSection
-          title="Recruiting Diverse Participants in SE"
-          body="The goal of this research was to understand the barriers human-centric SE researchers face when recruiting participants from 
-          underrepresented backgrounds, including gender, race, culture, socioeconomic status, disability, religion, sexual orientation, and age. 
-          To address the challenges we developed actionable strategies to improve participant outreach and enhance recruitment practices in SE for 
-          both novice and experienced researchers to increase grater inclusion in HCSE research. This research was supported by XXX"
+          title="Recruitment Barriers and Strategies for Supporting Researchers"
+          body="This research identified barriers faced by inclusive Human-Centric Software Engineering (HCSE) researchers in recruiting developers 
+          from underrepresented backgrounds for user studies. We developed strategies, informed by interdisciplinary research, and created an 
+          actionable framework to improve participant outreach and recruitment, promoting greater inclusion in HCSE research for both novice and 
+          experienced researchers."
+          photo='research_photos/RecruitmentBarriers.png'
+          alttext='Recruitment Barriers and Strategies for Supporting Researchers'
         />
       </Container>
       </Box>
