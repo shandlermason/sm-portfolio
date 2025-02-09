@@ -10,7 +10,7 @@ const internshipData = [
     internships: [
       { title: "Graduate Intern Ⅲ", date: "Summer 2025" },
       { title: "Graduate Intern ⅠⅠ", date: "Summer 2024" },
-      { title: "Graduate Intern Ⅰ and National Space Intern", date: "Summer 2023" },
+      { title: "Graduate Intern Ⅰ & National Space Intern", date: "Summer 2023" },
       { title: "Graduate Intern BS", date: "Summer 2022" },
     ],
   },
@@ -47,35 +47,36 @@ export default function Impact() {
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>International Research Community Activities</Typography>
         <List>
             <ListItem>
-              <ListItemText primary="[1] Publicity and Social Media Chair in Organizing Committee for IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)"/>
+              <ListItemText primary="Publicity and Social Media Chair in Organizing Committee for IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)"/>
             </ListItem>
         </List>
 
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>University Activities</Typography>
         <List>
             <ListItem>
-              <ListItemText primary="[1] Graduate Liaison for Code Black at NCSU"/>
+              <ListItemText primary="Graduate Liaison for Code Black at NCSU"/>
             </ListItem>
         </List>
 
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>Teaching</Typography>
         <List>
             <ListItem>
-              <ListItemText primary="[1] Teaching Assistant (TA), CSC 454/554 Human-Computer Interaction, NCSU Computer Science, Spring 2025, (120 students)"/>
+              <ListItemText primary="Teaching Assistant (TA), CSC 454/554 Human-Computer Interaction, NCSU Computer Science, Spring 2025, (120 students)"/>
             </ListItem>
         </List>
 
 
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>Internships</Typography>
-        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 2 }}>
+        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1 }}>
           {internshipData.map((internship) => (
             <Box key={internship.company} sx={{ width: { xs: '100%', sm: '48%', md: '23.5%' }}}>
               <Card>
                 <CardHeader
-                  avatar={<Avatar alt={internship.company} src={internship.logo} />}
-                  title={internship.company}
+                  avatar={<Avatar alt={internship.company} src={internship.logo} sx={{ width: 60, height: 60 }} />}
+                  title={<Typography variant="h6" fontWeight="bold" gutterBottom align='left'>{internship.company}</Typography>}
+                  sx={{ paddingBottom: 0 }}
                 />
-                <CardContent>
+                <CardContent sx={{ paddingTop: 0 }}>
                   <List dense>
                     {internship.internships.map((role) => (
                       <ListItem key={role.title} sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
