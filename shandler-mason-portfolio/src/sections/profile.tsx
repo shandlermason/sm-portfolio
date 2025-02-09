@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import Box from '@mui/material/Box';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Button from '@mui/material/Button';
+import {Link} from '@mui/material';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Profile() {
@@ -30,11 +31,11 @@ export default function Profile() {
               I'm a Computer Science Ph.D. student <i>discovering</i> <strong>societal</strong> and <strong>technological barriers</strong> and <i>inventing</i> <strong>methodologies</strong> to support software practitioners.
               </Typography>
 
-              <a href='https://2025.hci.international/W8.html'>Join my upcoming workshop at HCII 2025 in Gothenburg, Sweden!</a> <br/> <br/>
+              <Link href='https://2025.hci.international/W8.html' target='_blank'><strong>Join my upcoming workshop at HCII 2025 in Gothenburg, Sweden!</strong></Link> <br/> <br/>
 
               <ButtonGroup variant='outlined' aria-label='Basic button group' disableElevation>
-                <Button href="\shandler-mason-portfolio/sa_mason_cv.pdf" target='_blank'>CV</Button>
-                <Button href="\shandler-mason-portfolio/sa_mason_resume.pdf" target='_blank'>Resume</Button>
+                <Button href="\shandler-mason-portfolio/sa_mason_cv.pdf" target='_blank'><strong>CV</strong></Button>
+                <Button href="\shandler-mason-portfolio/sa_mason_resume.pdf" target='_blank'><strong>Resume</strong></Button>
                 {/* <Button>Thesis Proposal</Button> */}
               </ButtonGroup>
             </Col>

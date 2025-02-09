@@ -14,6 +14,33 @@ const theme = createTheme({
   typography: {
     fontFamily: ['Lora', 'serif'].join(','),
   },
+  palette: {
+    background: {
+      default: '#fbf9ef', // Beige
+    },
+    primary: {
+      main: '#f584a8', // Pink
+    },
+    secondary: {
+      main: '#90a38f', // Green
+    },
+  },
+  components: {
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "rgb(254, 252, 244)", // Beige
+        },
+      },
+    },
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: '#f584a8', // Pink
+        },
+      },
+    },
+  },
 });
 
 

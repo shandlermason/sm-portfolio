@@ -8,7 +8,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 export default function ResearchSection({title, body, photo, alttext}: {title:string, body:string, photo:string, alttext:string}) {
   return (
     <>
-      <Card sx={{ display: 'flex' }}>
+      <Card sx={{ display: 'flex', margin: '.75rem'}}>
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <CardContent sx={{ flex: '1 0 auto' }}>
             <Typography variant="h5" gutterBottom align='left'>
