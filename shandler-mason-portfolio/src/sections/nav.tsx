@@ -11,7 +11,7 @@ import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 
-const pages = ['About', 'Research', 'Publications', 'Impact', 'CV'];
+const pages = ['About', 'Research', 'Publications', 'Engagement', 'CV'];
 
 function ElevateScroll(props: any) {
   const { children } = props;
@@ -26,6 +26,10 @@ function ElevateScroll(props: any) {
       })
     : null;
 }
+
+const openCV = () => {
+  window.open('/shandler-mason-portfolio/sa_mason_cv.pdf', '_blank'); 
+};
 
 export default function NavBar(props: any) {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -56,8 +60,9 @@ export default function NavBar(props: any) {
                 fontFamily: 'monospace',
                 fontWeight: 700,
                 letterSpacing: '.3rem',
-                color: 'inherit',
+                // color: 'inherit',
                 textDecoration: 'none',
+                color: 'white'
               }}
             >
               S.A. Mason
@@ -69,7 +74,7 @@ export default function NavBar(props: any) {
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
-                color="inherit"
+                sx={{ color: 'white' }}
               >
                 <MenuIcon />
               </IconButton>
@@ -90,14 +95,24 @@ export default function NavBar(props: any) {
                 sx={{ display: { xs: 'block', md: 'none' } }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={() => {
-                    const element = document.getElementById(page);
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}>
-                    <Typography sx={{ textAlign: 'center' }}>{page}</Typography>
-                  </MenuItem>
+                  <React.Fragment key={page}> {/* Added Fragment */}
+                  {page === 'CV' ? (
+                    <Button
+                      onClick={openCV}
+                      sx={{ my: 2, color: 'primary', display: 'block' }}
+                    >
+                      {page}
+                    </Button>
+                  ) : (
+                    <Button
+                      onClick={handleCloseNavMenu}
+                      href={'#' + page}
+                      sx={{ my: 2, color: 'primary', display: 'block' }}
+                    >
+                      {page}
+                    </Button>
+                  )}
+                </React.Fragment>
                 ))}
               </Menu>
             </Box>
@@ -113,22 +128,32 @@ export default function NavBar(props: any) {
                 fontFamily: 'monospace',
                 fontWeight: 700,
                 letterSpacing: '.3rem',
-                color: 'inherit',
+                color: 'white',
                 textDecoration: 'none',
               }}
             >
-              Shandler Mason
+              S. A. Mason
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (
-                <Button
-                  key={page}
-                  onClick={handleCloseNavMenu}
-                  href={'#' + page}
-                  sx={{ my: 2, color: 'white', display: 'block' }}
-                >
-                  {page}
-                </Button>
+                <React.Fragment key={page}> {/* Added Fragment */}
+                {page === 'CV' ? (
+                  <Button
+                    onClick={openCV}
+                    sx={{ my: 2, color: 'white', display: 'block' }}
+                  >
+                    {page}
+                  </Button>
+                ) : (
+                  <Button
+                    onClick={handleCloseNavMenu}
+                    href={'#' + page}
+                    sx={{ my: 2, color: 'white', display: 'block' }}
+                  >
+                    {page}
+                  </Button>
+                )}
+              </React.Fragment>
               ))}
             </Box>
           </Toolbar>

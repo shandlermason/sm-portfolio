@@ -13,6 +13,9 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   typography: {
     fontFamily: ['Lora', 'serif'].join(','),
+    allVariants: {
+      color: '#45555E'
+    }
   },
   palette: {
     background: {
@@ -22,9 +25,8 @@ const theme = createTheme({
       main: '#f584a8', // Pink
     },
     secondary: {
-      // main: '#90a38f', // Green
-      // main: '#427657'
-      main: '#212922'
+      main: '#45555E'
+      // main: '#4E606A'
     },
   },
   components: {
