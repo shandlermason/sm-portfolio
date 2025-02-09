@@ -24,6 +24,7 @@ export default function ResearchSection({title, body, photo, alttext}: {title:st
           sx={{ 
             width: { xs: '100%', sm: '200px' },
             height: 'auto',
+            maxHeight: '300px',
             objectFit: 'cover',
             borderRadius: '4px',
             order: { xs: -1, sm: 1 }
