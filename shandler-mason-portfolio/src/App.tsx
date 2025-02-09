@@ -24,6 +24,7 @@ const theme = createTheme({
     secondary: {
       // main: '#90a38f', // Green
       // main: '#427657'
+      main: '#212922'
     },
   },
   components: {
