@@ -26,7 +26,7 @@ export default function Profile() {
               />
             </Col>
             <Col xs={12} md={6} lg={8}>
-              <Typography variant='h4' align='center' className='mb-3'><strong>Shandler A. Mason, M.S.</strong></Typography>
+              <Typography variant='h4' align='center' className='mb-3' color='secondary'><strong>Shandler A. Mason, M.S.</strong></Typography>
               <Typography variant='h5' gutterBottom align='left' className='mb-3 display-4'>
               I'm a Computer Science Ph.D. student <i>discovering</i> <strong>societal</strong> and <strong>technological barriers</strong> and <i>inventing</i> <strong>methodologies</strong> to support software practitioners.
               </Typography>

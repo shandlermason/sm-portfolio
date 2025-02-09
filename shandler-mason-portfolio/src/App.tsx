@@ -22,7 +22,8 @@ const theme = createTheme({
       main: '#f584a8', // Pink
     },
     secondary: {
-      main: '#90a38f', // Green
+      // main: '#90a38f', // Green
+      // main: '#427657'
     },
   },
   components: {

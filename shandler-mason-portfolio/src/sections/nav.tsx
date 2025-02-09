@@ -45,6 +45,7 @@ export default function NavBar(props: any) {
         <Container maxWidth={false}>
           <Toolbar disableGutters>
             <Typography
+              color="secondary"
               variant="h6"
               noWrap
               component="a"
