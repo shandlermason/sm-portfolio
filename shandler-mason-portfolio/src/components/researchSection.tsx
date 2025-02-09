@@ -21,7 +21,13 @@ export default function ResearchSection({title, body, photo, alttext}: {title:st
         </Box>
         <CardMedia
           component="img"
-          // sx={{ height: "100px" }}
+          sx={{ 
+            width: '200px',
+            height: 'auto',
+            objectFit: 'cover',
+            marginLeft: 'auto',
+            borderRadius: '4px'
+          }}
           image={photo}
           alt={alttext}
         />
