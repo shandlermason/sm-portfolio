@@ -47,7 +47,7 @@ export default function Impact() {
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>International Research Community Activities</Typography>
         <List>
             <ListItem>
-              <ListItemText primary="Publicity and Social Media Chair in Organizing Committee for IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC)"/>
+              <ListItemText primary="Publicity and Social Media Chair in Organizing Committee for IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC) 2025"/>
             </ListItem>
         </List>
 
@@ -61,7 +61,7 @@ export default function Impact() {
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>Teaching</Typography>
         <List>
             <ListItem>
-              <ListItemText primary="Teaching Assistant (TA), CSC 454/554 Human-Computer Interaction, NCSU Computer Science, Spring 2025, (120 students)"/>
+              <ListItemText primary="Teaching Assistant, CSC 454/554 Human-Computer Interaction, Spring 2025, (120 students)"/>
             </ListItem>
         </List>
 
