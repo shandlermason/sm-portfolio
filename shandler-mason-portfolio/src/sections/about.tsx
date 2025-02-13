@@ -11,7 +11,7 @@ export default function About() {
         <Typography variant="h4" fontWeight="bold" gutterBottom align='left'>About</Typography>
             <Container fluid>
               <Typography variant="h6" gutterBottom align='left' className='mb-3'>
-              I'm a Ph.D. student in the Department of Computer Science at North Carolina State University where I am advised by Dr. Sandeep Kaur Kuttal 
+              I'm a Ph.D. candidate in the Department of Computer Science at North Carolina State University where I am advised by Dr. Sandeep Kaur Kuttal 
               in the Human Factors + Experience Engineering Lab <i>(Discovering and Inventing for Human-Centered SE and AI)</i>. My dissertation will explore the 
               human side of software engineering, addressing societal and technological barriers to promote more inclusive and equitable remote collaboration.
               </Typography>
