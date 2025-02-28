@@ -32,6 +32,8 @@ export default function Profile() {
               </Typography>
 
               <Link href='https://2025.hci.international/W8.html' target='_blank'><strong>Join our upcoming workshop at HCII 2025 in Gothenburg, Sweden!</strong></Link> <br/> <br/>
+              
+              <Link href='https://www.linkedin.com/in/shandler-mason-306207169/' target='_blank'><strong>Join my network on LinkedIn!</strong></Link> <br/> <br/>
 
               <ButtonGroup variant='outlined' aria-label='Basic button group' disableElevation>
                 <Button href="/shandler-mason-portfolio/sa_mason_cv.pdf" target='_blank'><strong>CV</strong></Button>
