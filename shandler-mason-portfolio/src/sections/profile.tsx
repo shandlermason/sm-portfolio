@@ -9,7 +9,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 export default function Profile() {
   return (
     <>
-      <Box id="About" sx={{ paddingTop: '64px' }}>
+      <Box id="About" sx={{ paddingTop: '80px' }}>
         <Container fluid>
           <Row className='d-flex flex-wrap m-3 justify-content-center align-items-center mt-8'>
             <Col xs={12} md={6} lg={4} className="text-center mb-4">
