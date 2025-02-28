@@ -1,14 +1,13 @@
-import './App.css'
-import Divider from '@mui/material/Divider';
 import Container from '@mui/material/Container';
-import NavBar from './sections/nav'
-import Profile from './sections/profile'
-import Research from './sections/research';
-import Publications from './sections/publications';
-import Engagement from './sections/engagement';
+import Divider from '@mui/material/Divider';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import './App.css';
 import About from './sections/about';
-import { ThemeProvider } from '@mui/material/styles';
-import { createTheme } from '@mui/material/styles';
+import Engagement from './sections/engagement';
+import NavBar from './sections/nav';
+import Profile from './sections/profile';
+import Publications from './sections/publications';
+import Research from './sections/research';
 
 const theme = createTheme({
   typography: {
@@ -22,7 +21,8 @@ const theme = createTheme({
       default: '#fbf9ef', // Beige
     },
     primary: {
-      main: '#f584a8', // Pink
+      main: '#C77A6D', // Darker Dusty Rose (#C77A6D) or Richer Deep Rose (#D16B5A)
+      // main: '#f584a8', // Pink
     },
     secondary: {
       main: '#45555E'
@@ -40,7 +40,8 @@ const theme = createTheme({
     MuiLink: {
       styleOverrides: {
         root: {
-          color: '#f584a8', // Pink
+          color: '#C77A6D'
+          //color: '#f584a8', // Pink
         },
       },
     },
