@@ -64,7 +64,7 @@ export default function NavBar(props: any) {
                 color: 'white'
               }}
             >
-              S.A. Mason
+              S.A.Mason
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
@@ -131,7 +131,7 @@ export default function NavBar(props: any) {
                 textDecoration: 'none',
               }}
             >
-              S. A. Mason
+              S.A.Mason
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
               {pages.map((page) => (

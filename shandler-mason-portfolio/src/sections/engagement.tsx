@@ -10,7 +10,7 @@ const internshipData = [
     internships: [
       { title: "Graduate Intern Ⅲ", date: "Summer 2025" },
       { title: "Graduate Intern ⅠⅠ", date: "Summer 2024" },
-      { title: "Graduate Intern Ⅰ & National Space Intern", date: "Summer 2023" },
+      { title: "Graduate Intern Ⅰ", date: "Summer 2023" },
       { title: "Graduate Intern BS", date: "Summer 2022" },
     ],
   },
@@ -30,9 +30,9 @@ const internshipData = [
   },
     {
     company: "Facebook", 
-    logo: "internship_photos/facebook.png",
+    logo: "internship_photos/facebook_pic.jpg",
     internships: [
-        { title: "Facebook University Engineering", date: "Summer 2019" },
+        { title: "Facebook University", date: "Summer 2019" },
     ]
   },
 ];
