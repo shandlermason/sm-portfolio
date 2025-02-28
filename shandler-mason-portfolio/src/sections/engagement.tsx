@@ -45,23 +45,23 @@ export default function Engagement() {
         <Typography variant="h4" fontWeight="bold" gutterBottom align='left'>Engagement</Typography>
 
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>International Research Community Activities</Typography>
-        <List>
-            <ListItem>
-              <ListItemText primary="Publicity and Social Media Chair in Organizing Committee for IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC) 2025"/>
+        <List sx={{ paddingLeft: 5, listStyleType: 'disc' }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <ListItemText primary="Publicity and Social Media Chair, Visual Languages and Human-Centric Computing (VL/HCC) Organizing Committee, 2025"/>
             </ListItem>
         </List>
 
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>University Activities</Typography>
-        <List>
-            <ListItem>
-              <ListItemText primary="Graduate Liaison for Code Black at NCSU"/>
+        <List sx={{ paddingLeft: 5, listStyleType: 'disc' }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <ListItemText primary="Graduate Liaison for Code Black, NCSU Department of Computer Science, 2025"/>
             </ListItem>
         </List>
 
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>Teaching</Typography>
-        <List>
-            <ListItem>
-              <ListItemText primary="Teaching Assistant, CSC 454/554 Human-Computer Interaction, Spring 2025, (120 students)"/>
+        <List sx={{ paddingLeft: 5, listStyleType: 'disc' }}>
+            <ListItem sx={{ display: 'list-item' }}>
+              <ListItemText primary="Teaching Assistant (TA), CSC 454/554 Human-Computer Interaction (120 students), Spring 2025"/>
             </ListItem>
         </List>
 
