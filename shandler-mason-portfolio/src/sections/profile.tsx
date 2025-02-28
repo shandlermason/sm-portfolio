@@ -36,10 +36,10 @@ export default function Profile() {
               <Link href='https://www.linkedin.com/in/shandler-mason-306207169/' target='_blank'><strong>Join my network on LinkedIn!</strong></Link> <br/> <br/>
 
               <ButtonGroup variant='outlined' aria-label='Basic button group' disableElevation>
-                <Button href="/sm-portfolio/sa_mason_cv.pdf" target='_blank'><strong>CV</strong></Button>
+                <Button href="/sm-portfolio/sa_mason_cv.pdf" target='_blank'><strong>Curriculum Vitae</strong></Button>
                 <Button href="/sm-portfolio/sa_mason_resume.pdf" target='_blank'><strong>Resume</strong></Button>
-                <Button href="/sm-portfolio/sa_mason_resume.pdf" target='_blank'><strong>Short Bio</strong></Button>
-                <Button href="/sm-portfolio/sa_mason_resume.pdf" target='_blank'><strong>Headshot</strong></Button>
+                <Button href="/sm-portfolio/short_bio.pdf" target='_blank'><strong>Short Bio</strong></Button>
+                <Button href="/sm-portfolio/Headshot.jpg" target='_blank'><strong>Headshot</strong></Button>
                 {/* <Button>Thesis Proposal</Button> */}
               </ButtonGroup>
             </Col>
