@@ -1,7 +1,7 @@
-import { Container } from 'react-bootstrap';
+import { Avatar, Box, Card, CardContent, CardHeader, List, ListItem, ListItemText } from '@mui/material';
 import Typography from '@mui/material/Typography';
-import { Box, Card, CardHeader, CardContent, Avatar, List, ListItem, ListItemText } from '@mui/material';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container } from 'react-bootstrap';
 
 const internshipData = [
   {
@@ -37,10 +37,10 @@ const internshipData = [
   },
 ];
 
-export default function Impact() {
+export default function Engagement() {
   return (
     <>
-      <Box id="Impact" fontWeight="bold" sx={{ paddingTop: '32px' }}>
+      <Box id="Engagement" fontWeight="bold" sx={{ paddingTop: '32px' }}>
       <Container fluid>
         <Typography variant="h4" fontWeight="bold" gutterBottom align='left'>Engagement</Typography>
 
