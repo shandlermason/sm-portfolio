@@ -47,7 +47,7 @@ export default function Engagement() {
         <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>International Research Community Activities</Typography>
         <List sx={{ paddingLeft: 5, listStyleType: 'disc' }}>
             <ListItem sx={{ display: 'list-item' }}>
-              <ListItemText primary="Publicity and Social Media Chair, Visual Languages and Human-Centric Computing (VL/HCC) Organizing Committee, 2025"/>
+              <ListItemText primary="Publicity and Social Media Chair, IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC) Organizing Committee, 2025"/>
             </ListItem>
         </List>
 
