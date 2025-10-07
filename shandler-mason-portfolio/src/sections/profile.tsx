@@ -34,13 +34,7 @@ export default function Profile() {
               
               {/* <Link href='https://www.linkedin.com/in/shandler-mason-306207169/' target='_blank'><strong>Join my network on LinkedIn!</strong></Link> <br/> <br/> */}
 
-              <ButtonGroup variant='outlined' aria-label='Basic button group' disableElevation sx={{
-    '& .MuiButton-root': {
-      fontWeight: 'bold',      // makes text bold
-      fontSize: '1rem',        // increase text size
-      padding: '10px 20px',    // increase button size
-    },
-  }}>
+              <ButtonGroup variant='outlined' aria-label='Basic button group' disableElevation>
                 <Button href="/sm-portfolio/Shandler_Mason_CV_Sep_27_2025.pdf" target='_blank'><strong>CV</strong></Button>
                 {/* <Button href="/sm-portfolio/sa_mason_resume.pdf" target='_blank'><strong>Resume</strong></Button> */}
                 {/* <Button href="/sm-portfolio/short_bio.pdf" target='_blank'><strong>Short Bio</strong></Button> */}
