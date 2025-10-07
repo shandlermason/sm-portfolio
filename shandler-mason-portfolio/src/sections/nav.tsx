@@ -27,7 +27,7 @@ function ElevateScroll(props: any) {
 }
 
 const openCV = () => {
-  window.open('/sm-portfolio/sa_mason_cv.pdf', '_blank'); 
+  window.open('/sm-portfolio/Shandler_Mason_CV_Sep_27_2025.pdf', '_blank'); 
 };
 
 export default function NavBar(props: any) {

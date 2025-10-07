@@ -1,4 +1,3 @@
-import { Link } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
@@ -31,15 +30,15 @@ export default function Profile() {
               I'm a Computer Science Ph.D. Candidate <i>discovering</i> <strong>societal</strong> and <strong>technological barriers</strong> and <i>inventing</i> <strong>methodologies</strong> to support software practitioners.
               </Typography>
 
-              <Link href='https://2025.hci.international/W8.html' target='_blank'><strong>Join our upcoming workshop at HCII 2025 in Gothenburg, Sweden!</strong></Link> <br/> <br/>
+              {/* <Link href='https://2025.hci.international/W8.html' target='_blank'><strong>Join our upcoming workshop at HCII 2025 in Gothenburg, Sweden!</strong></Link> <br/> <br/> */}
               
-              <Link href='https://www.linkedin.com/in/shandler-mason-306207169/' target='_blank'><strong>Join my network on LinkedIn!</strong></Link> <br/> <br/>
+              {/* <Link href='https://www.linkedin.com/in/shandler-mason-306207169/' target='_blank'><strong>Join my network on LinkedIn!</strong></Link> <br/> <br/> */}
 
               <ButtonGroup variant='outlined' aria-label='Basic button group' disableElevation>
-                <Button href="/sm-portfolio/sa_mason_cv.pdf" target='_blank'><strong>Curriculum Vitae</strong></Button>
-                <Button href="/sm-portfolio/sa_mason_resume.pdf" target='_blank'><strong>Resume</strong></Button>
-                <Button href="/sm-portfolio/short_bio.pdf" target='_blank'><strong>Short Bio</strong></Button>
-                <Button href="/sm-portfolio/Headshot.jpg" target='_blank'><strong>Headshot</strong></Button>
+                <Button href="/sm-portfolio/sa_mason_cv.pdf" target='_blank'><strong>CV</strong></Button>
+                {/* <Button href="/sm-portfolio/sa_mason_resume.pdf" target='_blank'><strong>Resume</strong></Button> */}
+                {/* <Button href="/sm-portfolio/short_bio.pdf" target='_blank'><strong>Short Bio</strong></Button> */}
+                {/* <Button href="/sm-portfolio/Headshot.jpg" target='_blank'><strong>Headshot</strong></Button> */}
                 {/* <Button>Thesis Proposal</Button> */}
               </ButtonGroup>
             </Col>
