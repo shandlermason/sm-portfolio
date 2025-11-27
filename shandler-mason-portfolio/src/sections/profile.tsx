@@ -30,9 +30,9 @@ export default function Profile() {
               <Typography variant='h5' gutterBottom align='center' className='mb-3 display-4' color='secondary'>
                 I am a Computer Science doctoral candidate at NC State University.
                 <br />
-                <span style={{ fontWeight: 'bold', color: '#005A8D' }}>
+                <div style={{ fontWeight: 'bolder', color: '#005A8D', paddingTop: '15px'}}>
                   <i>I am on the job market!</i>
-                </span>
+                </div>
               {/*I'm a Computer Science Ph.D. Candidate <i>discovering</i> <strong>societal</strong> and <strong>technological barriers</strong> and <i>inventing</i> <strong>methodologies</strong> to support software practitioners.*/}
               </Typography>
               {/* <Link href='https://2025.hci.international/W8.html' target='_blank'><strong>Join our upcoming workshop at HCII 2025 in Gothenburg, Sweden!</strong></Link> <br/> <br/> */}
