@@ -30,7 +30,7 @@ export default function Profile() {
               <Typography variant='h5' gutterBottom align='center' className='mb-3 display-4' color='secondary'>
                 I am a Computer Science doctoral candidate at NC State University.
                 <br />
-                <div style={{ fontWeight: 'bolder', color: '#005A8D', paddingTop: '15px'}}>
+                <div style={{ fontWeight: 'bolder', color: '#005A8D', paddingTop: '20px', paddingBottom: '5px'}}>
                   <i>I am on the job market!</i>
                 </div>
               {/*I'm a Computer Science Ph.D. Candidate <i>discovering</i> <strong>societal</strong> and <strong>technological barriers</strong> and <i>inventing</i> <strong>methodologies</strong> to support software practitioners.*/}
@@ -38,7 +38,7 @@ export default function Profile() {
               {/* <Link href='https://2025.hci.international/W8.html' target='_blank'><strong>Join our upcoming workshop at HCII 2025 in Gothenburg, Sweden!</strong></Link> <br/> <br/> */}
               {/* <Link href='https://www.linkedin.com/in/shandler-mason-306207169/' target='_blank'><strong>Join my network on LinkedIn!</strong></Link> <br/> <br/> */}
 
-              <ButtonGroup variant='contained' aria-label='Basic button group' disableElevation>
+              <ButtonGroup variant='contained' aria-label='Basic button group' disableElevation size="large">
                 <Button href="/sm-portfolio/Website_CV.pdf" target='_blank'><strong>CV</strong></Button>
                 <Button href="https://www.linkedin.com/in/shandler-mason-m-s-306207169/" target='_blank'><strong>LinkedIn</strong></Button>
                 {/* <Button href="/sm-portfolio/sa_mason_resume.pdf" target='_blank'><strong>Resume</strong></Button> */}

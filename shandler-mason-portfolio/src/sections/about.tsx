@@ -10,9 +10,16 @@ export default function About() {
         <Container fluid>
         <Typography variant="h4" fontWeight="bold" gutterBottom align='left'>About</Typography>
             <Container fluid>
-              <Typography variant="h6" gutterBottom align='center' className='mb-3'>
-              I integrate <strong>human-computer interaction, software engineering, human factors,</strong> 
-              and <strong>policy</strong> to uncover societal barriers and influence equitable software.
+              <Typography variant="h5" gutterBottom align='center' className='mb-3'>
+              I integrate <strong>human-computer interaction, software engineering, human factors, </strong> 
+              and <strong>policy</strong> to uncover societal barriers for equitable software. 
+              </Typography>
+
+              <br />
+              <Typography variant="h6" gutterBottom align='right' className='mb-3'>
+              I am advised by <a href="https://skuttal.github.io/skk/" target="_blank" rel="noopener noreferrer"> Dr. Sandeep Kuttal</a>.
+              My Ph.D. is funded by the National GEM Consortium and NC State's Provost Office.
+              <br /> I also hold an M.S. in Computer Science from NC State and a B.S. in Computer Science with a <br /> minor in Applied Mathematics from NC Agricultural & Technical State University.
               
               {/*I am advised by <a href="https://skuttal.github.io/skk/" target="_blank" rel="noopener noreferrer"> Dr. Sandeep K. Kuttal </a>. */}
 
