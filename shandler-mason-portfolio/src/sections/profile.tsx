@@ -16,10 +16,9 @@ export default function Profile() {
                 src='portrait.png' 
                 alt="Profile Picture of Shandler A. Mason" 
                 style={{ 
-                  borderRadius: '50%', 
-                  maxWidth: '100%', 
-                  height: 'auto',
-                  width: '350px',
+                  width: '350px',  // Set width
+                  height: '350px', // Set height equal to width to keep it square
+                  borderRadius: '15%',  // Apply rounded corners
                   margin: '.25rem'
                 }}
               />
