@@ -18,7 +18,7 @@ export default function Profile() {
                 style={{ 
                   width: '350px',  // Set width
                   height: '350px', // Set height equal to width to keep it square
-                  borderRadius: '15%',  // Apply rounded corners
+                  borderRadius: '10%',  // Apply rounded corners
                   margin: '.25rem'
                 }}
               />
