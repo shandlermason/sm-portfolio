@@ -1,9 +1,9 @@
+import '@fontsource/roboto/300.css';
 import Container from '@mui/material/Container';
 import Divider from '@mui/material/Divider';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import './App.css';
 import About from './sections/about';
-import Engagement from './sections/engagement';
 import NavBar from './sections/nav';
 import Profile from './sections/profile';
 import Publications from './sections/publications';
@@ -11,17 +11,22 @@ import Research from './sections/research';
 
 const theme = createTheme({
   typography: {
-    fontFamily: ['Lora', 'serif'].join(','),
+    fontFamily: ['Roboto', 'sans-serif'].join(','),
+    //fontWeight: 300,
     allVariants: {
-      color: '#45555E'
+      color: '#000000'
+      //'#45555E'
     }
   },
   palette: {
     background: {
-      default: '#fbf9ef', // Beige
+      default: '#FFFFFF'
+      //'#fbf9ef', // Beige
     },
     primary: {
-      main: '#C77A6D', // Darker Dusty Rose (#C77A6D) or Richer Deep Rose (#D16B5A)
+      main: '#005A8D'
+      //'#6DB1E1'
+      //'#C77A6D', // Darker Dusty Rose (#C77A6D) or Richer Deep Rose (#D16B5A)
       // main: '#f584a8', // Pink
     },
     secondary: {
@@ -33,7 +38,8 @@ const theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          backgroundColor: "rgb(254, 252, 244)", // Beige
+          backgroundColor: "#FFFFFF",
+          //""rgb(254, 252, 244)", // Beige
         },
       },
     },
@@ -63,9 +69,9 @@ function App() {
         <Research/>
         <Divider variant="middle"/>
         <Publications/>
-        <Divider variant="middle"/>
+        {/*<Divider variant="middle"/>
         <Engagement/>
-        <Divider variant="middle"/>
+        <Divider variant="middle"/>*/}
       </Container>
     </ThemeProvider>
   )

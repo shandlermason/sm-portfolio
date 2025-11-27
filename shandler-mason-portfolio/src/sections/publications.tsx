@@ -1,80 +1,72 @@
+import Box from '@mui/material/Box'; // MUI Box component
 import { Container } from 'react-bootstrap';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import PublicationSection from '../components/publicationSection';
 
+import Typography from '@mui/material/Typography'; // MUI Typography component
+import { FaFilePdf } from 'react-icons/fa'; // PDF icon from React Icons
 
 export default function Publications() {
   
-  return (
-    <>
-      <Box id="Publications" sx={{ paddingTop: '32px' }}>
+return (
+    <Box id="Publications" sx={{ paddingTop: '32px' }}>
+      {/* Main Container to hold everything */}
       <Container fluid>
-        <Typography variant="h4" fontWeight="bold" gutterBottom align='left'>Publications</Typography>
+        {/* Publications Title */}
+        <Typography variant="h4" fontWeight="bold" gutterBottom align="left">
+          Publications
+        </Typography>
 
-        <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>Refereed Journal Publications</Typography>
-        <PublicationSection
-          number='1'
-          reference={<><strong>Shandler A. Mason</strong>, and Sandeep Kaur Kuttal. "Diversity's Double-Edged Sword: Analyzing Race's Effect on Remote Pair Programming Interactions." ACM Transactions on Software Engineering and Methodology (TOSEM). November 2024.</>}
-          doi="https://doi.org/10.1145/3699601"
-        />
+        {/* Publication Table / Flex Container */}
+        <Box sx={{ display: 'flex', flexDirection: 'column', marginBottom: '8px' }}>
+          {/* Column Headers */}
+          <Box
+            sx={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              fontWeight: 'bold',
+              fontSize: '1.1rem',
+              color: '#005A8D',
+              marginBottom: '8px',
+            }}
+          >
+          </Box>
 
+          {/* Publication Content */}
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+            {/* Left side: Journal/Conference name (TOSEM) */}
+            <Box sx={{ width: '20%', paddingLeft: '200px'}}>
+              <Typography variant="body1" sx={{ margin: 0, lineHeight: 1.5, fontWeight: 'bolder', color: '#005A8D', fontSize: '1.1rem'}}>
+                TOSEM 2024
+              </Typography>
+            </Box>
 
-        <Typography variant="h5" fontWeight="bold" gutterBottom align='left'>Rigorously Reviewed Conference Publications</Typography>
-        <PublicationSection
-          number="1"
-          reference={<>
-            <strong>Shandler A. Mason</strong>, Hank Lenham, Sandeep Kuttal, “Breaking the Silos: An Actionable Framework for Recruiting Diverse Participants in SE,” Software Engineering in Society (SEIS) at 47th International Conference on Software Engineering (ICSE), 2025.
-          </>}
-          doi=""
-        /> 
-        <PublicationSection
-          number="2"
-          reference={<>
-            <strong>Shandler A. Mason</strong>, Sandeep Kuttal, “Analyzing Gender-Based Dynamics in Remote Pair Programming Interactions,” 6th Workshop on Gender Equality, Diversity, and Inclusion in Software Engineering at 47th International Conference on Software Engineering (ICSE), 2025.
-          </>}
-          doi=""
-        /> 
-        <PublicationSection
-          number="3"
-          reference={<>
-            Sandeep Kaur Kuttal, Jacob Hart, Marcus Ensley, <strong>Shandler A. Mason</strong>, “Pair Programming in the Lab vs. Wild: A Qualitative Analysis of Creativity Strategies and Dialogue Styles for Agent Training Data,” 27th International Conference on Human-Computer Interaction, HCI International (HCII), 2025.
-          </>}
-          doi=""
-        />      
-        <PublicationSection
-          number='4'
-          reference={<><strong>Shandler A. Mason</strong>, Sanket Nain, and Sandeep Kaur Kuttal. "Bridging Perspectives: Unveiling Racial Dynamics in Remote Pair Programming Communication." International Conference on Human-Computer Interaction (HCII). Cham: Springer Nature Switzerland, June 2024.</>}
-          doi="https://doi.org/10.1007/978-3-031-60441-6_18"
-        />
-        <PublicationSection
-          number='5'
-          reference={<>Jacob Hart, Jake AuBuchon, Alexander McAuliffe, <strong>Shandler A. Mason</strong>, Sandeep Kaur Kuttal. "Navigating NLU Challenges in Pair Programming Agents: A Study on Data Size, Gender, Language, & Domain Effects." International Conference on Human-Computer Interaction (HCII). Cham: Springer Nature Switzerland, June 2024.</>}
-          doi="https://doi.org/10.1007/978-3-031-60606-9_20"
-        />
-        <PublicationSection
-          number='6'
-          reference={<><strong>Shandler A. Mason</strong>, and Sandeep Kaur Kuttal. "Investigating Interracial Pair Coordination During Remote Pair Programming." 2023 IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC). IEEE, October 2023.</>}
-          doi="https://doi.org/10.1109/VL-HCC57772.2023.00047"
-        />         
+            {/* Middle: Publication Details (Authors, Title, etc.) */}
+            <Box sx={{ width: '60%' }}>
+              <Typography variant="body1" sx={{ margin: 0, lineHeight: 1.5 }}>
+                <Typography variant="body1" component="span" sx={{ textDecoration: 'underline' }}>
+                  <strong>Mason, S. A.,</strong></Typography> & Kuttal, S. K.
+                <i> Diversity's Double-Edged Sword: Analyzing Race's Effect on Remote Pair Programming Interactions. </i> 
+                ACM Transactions on Software Engineering and Methodology, pp. 1–45. 
+                <Typography variant="body1" component="span" sx={{ fontWeight: 'bolder', color: '#005A8D' }}>
+                  <strong> *Journal-First; Presented at ICSE*</strong></Typography>
+              </Typography>
+            </Box>
 
-        {/* Copy and Paste this template! 
-        // Make sure to surround your name with strong to bold: <strong>Shandler A. Mason</strong>
-        //Make sure to include http:// or https:// for each doi
-        */}
-        {/* 
-        <PublicationSection
-          number=""
-          reference={<>
-
-          </>}
-          doi=""
-        /> 
-        */}
-
+            {/* Right side: PDF Icon with Link */}
+            <Box sx={{ width: '10%', textAlign: 'right', paddingRight: '200px' }}>
+              <a
+                href="https://doi.org/10.1145/3699601"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#6DB1E1', fontSize: '1.5rem' }}
+              >
+                <FaFilePdf /> {/* PDF icon */}
+              </a>
+            </Box>
+          </Box>
+        </Box>
       </Container>
-      </Box>
-    </>
+      {/* Divider line */}
+      <hr style={{ margin: '10px 0', borderColor: '#ddd', borderWidth: '1px' }} />
+    </Box>
   );
 }

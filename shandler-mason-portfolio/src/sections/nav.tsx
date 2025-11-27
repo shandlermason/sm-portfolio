@@ -9,8 +9,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import * as React from 'react';
+import { FaHome } from 'react-icons/fa';
 
-const pages = ['About', 'Research', 'Publications', 'Engagement', 'CV'];
+const pages = ['About', 'Research', 'Publications', 'CV'];
+//const pages = ['About', 'Research', 'Publications', 'Engagement', 'CV'];
 
 function ElevateScroll(props: any) {
   const { children } = props;
@@ -27,7 +29,7 @@ function ElevateScroll(props: any) {
 }
 
 const openCV = () => {
-  window.open('/sm-portfolio/Shandler_Mason_CV_Sep_27_2025.pdf', '_blank'); 
+  window.open('/sm-portfolio/Website_CV.pdf', '_blank'); 
 };
 
 export default function NavBar(props: any) {
@@ -64,7 +66,7 @@ export default function NavBar(props: any) {
                 color: 'white'
               }}
             >
-              S.A.Mason
+              <FaHome style={{ marginRight: '8px' }} />
             </Typography>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
